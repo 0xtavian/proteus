@@ -1,6 +1,6 @@
 # Proteus
-Proteus is an API and Database for [Axiom](https://github.com/pry0cc/axiom). 
-Originally, written for [Hacking Together an ASM Platform Using ProjectDiscovery Tools](https://twitter.com/pdiscoveryio/status/1551558898879893506)
+Proteus - The axiom database and API https://github.com/pry0cc/axiom. <br>
+Originally, written for [Hacking Together an ASM Platform Using ProjectDiscovery Tools](https://twitter.com/pdiscoveryio/status/1551558898879893506). 
 
 # Setup
 
