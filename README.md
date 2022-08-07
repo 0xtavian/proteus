@@ -6,8 +6,8 @@ Originally, written for [Hacking Together an ASM Platform Using ProjectDiscovery
 
 First, clone the repository
 ```
-git clone https://github.com/pry0cc/proteus ~/app
-cd ~/app
+git clone https://github.com/pry0cc/proteus ~/.proteus
+cd ~/.proteus
 ```
 
 Next, modify config/notify.yaml to include your slack webhook.
@@ -28,7 +28,7 @@ services:
       - /home/op/.axiom/accounts/personal.json:/root/.axiom/accounts/default.json # map your account here 
       - /home/op/.axiom/modules:/root/.axiom/modules # map modules
       - /home/op/.ssh:/root/.ssh # map SSH
-      - /home/op/app:/app # map the local git clone filder to the app (for persistence of data like rawdata & scans), not 100% necessary but nice to have.
+      - /home/op/.proteus:/app # map proteus folder to the app (for persistence of data like rawdata & scans), not 100% necessary but nice to have.
 ```
 
 
@@ -41,7 +41,7 @@ sudo docker compose up
 Thats it!
 
 # Usage
-Store your targets in the local scope folder https://github.com/0xtavian/proteus/tree/main/scope <br>
+Store your target(s) in the local scope folder ( [~/.proteus/scope/](https://github.com/pry0cc/proteus/tree/main/scope) ) <br>
 All fleets are unique to each target, so there is no crossover of data. You can either spin up instances and then launch scans, in which case, the instances will remain after, or you can just launch scans. If you launch a scan without any instances prensent, it will spin up 5 instances by default and then autoremove them when its done.
 
 ```
