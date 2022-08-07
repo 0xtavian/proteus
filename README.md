@@ -7,7 +7,7 @@ Originally, written for [Hacking Together an ASM Platform Using ProjectDiscovery
 First, clone the repository
 ```
 git clone https://github.com/pry0cc/proteus ~/app
-cd proteus
+cd ~/app
 ```
 
 Next, modify config/notify.yaml to include your slack webhook.
